@@ -10,9 +10,10 @@ import Leaderboard from "./components/Leaderboard";
 import Rules from "./components/Rules";
 import Dashboard from "./components/Dashboard";
 import "bootstrap/dist/css/bootstrap.css";
-
+import Header from "./components/header-footer/header";
 const Root = () => (
   <Router>
+    <Header />
     <Switch>
       <PrivateRoute exact={true} path="/" component={Dashboard} />
       <Route exact={true} path="/login" component={App} />
